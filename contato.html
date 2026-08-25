@@ -4,19 +4,6 @@
   <meta charset="UTF-8">
   <title>Contato - Natrilha Turismo</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Estilos básicos para feedback */
-    #resposta.sucesso {
-      color: green;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    #resposta.erro {
-      color: red;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
 
@@ -33,12 +20,12 @@
 
   <img src="img/contato-banner.png" alt="Entre em Contato Conosco!" class="titulo-img">
 
-  <!-- Formulário integrado ao Formcarry -->
   <form id="form-contato" action="https://formcarry.com/s/5gqwOAjT-Br" method="POST">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
 
-    <input type="email" id="email" name="email" value="pedrolucaslb@hotmail.com" required style="display:none;">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
     <label for="mensagem">Mensagem:</label>
     <textarea id="mensagem" name="mensagem" required></textarea>
@@ -46,14 +33,30 @@
     <button type="submit" class="btn">Enviar</button>
   </form>
 
-  <!-- Mensagem de resposta -->
-  <p id="resposta"></p>
-
-  <!-- Script principal -->
-  <script src="js/principal.js" defer></script>
+  <script>
+    const form = document.getElementById("form-contato");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: data
+        });
+        if (response.ok) {
+          // redireciona para a página de obrigado
+          window.location.href = "/obrigado.html";
+        } else {
+          alert("❌ Erro ao enviar. Tente novamente.");
+        }
+      } catch (err) {
+        alert("❌ Erro de conexão. Tente novamente.");
+      }
+    });
+  </script>
 
   <footer>
-    <p>&copy; 2023 Natrilha Turismo - Todos os direitos reservados</p>
+    <p>&copy; 2026 Natrilha Turismo - Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
