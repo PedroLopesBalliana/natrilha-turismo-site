@@ -1,0 +1,258 @@
+/* Paleta: Verde (#2E7D32) e Laranja (#F57C00) */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #2E7D32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 50px;
+  border-radius: 15px; /* deixa as bordas suaves */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  text-align: center;
+  background: #F57C00;
+  color: white;
+  padding: 50px 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background: #2E7D32;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: #1B5E20;
+}
+
+footer {
+  background: #2E7D32;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo-img {
+  display: block;
+  margin: 10px auto 15px auto;
+  max-width: 500px; /* reduz bastante o tamanho */
+  height: auto;
+}
+
+.titulo-servicos {
+  text-align: center;
+  font-size: 2em;
+  color: #2E7D32; /* Verde da paleta */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.cta-button {
+  background-color: #F57C00; /* Laranja da paleta */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #E65100;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+form label {
+  display: block;          /* força o label a ocupar uma linha inteira */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2E7D32;          /* verde da paleta */
+}
+
+form input,
+form textarea {
+  display: block;          /* força o input/textarea a ficar abaixo do label */
+  width: 100%;             /* ocupa toda a largura disponível */
+  padding: 10px;
+  margin-bottom: 15px;     /* espaço entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #F57C00; /* laranja da paleta */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #E65100;
+}
+
+.mensagem-sucesso {
+  background-color: #2E7D32; /* verde da paleta */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.3);
+}
+
+.banner1 {
+  display: block;
+  margin: 0 auto;          /* centraliza a imagem */
+  width: 50%;              /* reduz o tamanho para 80% da largura da seção */
+  max-width: 1000px;       /* evita que fique muito grande em telas grandes */
+  border-radius: 15px;     /* arredonda as bordas */
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  color: #ffffff; /* verde da paleta */
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* sombra suave */
+  margin-bottom: 15px;
+  -webkit-text-stroke: 1px rgb(2, 44, 3); /* contorno preto */
+}
+
+.banner p {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #ffffff; /* tom suave de branco */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sobre-texto {
+  max-width: 800px;                /* largura máxima da caixa */
+  margin: 40px auto;               /* centraliza horizontalmente */
+  background-color: rgba(255,255,255,0.9); /* caixa clara */
+  padding: 30px;                   /* espaço interno */
+  border-radius: 15px;             /* vértices arredondadas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* sombra suave */
+  font-size: 1.3em;
+  line-height: 1.6;
+  text-align: center;
+  color: #2E7D32;                  /* verde da paleta */
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center;    /* centraliza horizontalmente */
+  gap: 30px;              /* espaço entre cada item */
+  margin-top: 40px;
+}
+
+.galeria .item {
+  text-align: center;     /* centraliza o texto */
+  max-width: 700px;       /* controla largura máxima da caixa */
+  width: 100%;            /* ocupa toda a largura disponível */
+  background-color: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 600px;       /* controla tamanho máximo da foto */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.galeria p {
+  font-size: 1.1em;
+  color: #2E7D32;         /* verde da paleta */
+  font-weight: 500;
+}
+
+
+.sobre {
+  display: flex;
+  flex-direction: column;   /* empilha imagem e texto */
+  align-items: center;      /* centraliza tudo */
+  gap: 20px;                /* espaço entre imagem e texto */
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.sobre-img {
+  width: 100%;
+  max-width: 700px;         /* controla tamanho da foto */
+  border-radius: 15px;      /* bordas arredondadas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
