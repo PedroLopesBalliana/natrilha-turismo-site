@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <title>Contato - Natrilha Turismo</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos básicos para feedback */
+    #resposta.sucesso {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    #resposta.erro {
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <script src="js/principal.js"></script>
+
   <header>
     <img src="img/logo.png" alt="Logo Natrilha Turismo" class="logo">
     <nav>
@@ -17,18 +30,30 @@
       </ul>
     </nav>
   </header>
+
   <img src="img/contato-banner.png" alt="Entre em Contato Conosco!" class="titulo-img">
-  <form id="form-contato" action="#" method="post">
+
+  <!-- Formulário integrado ao Formcarry -->
+  <form id="form-contato" action="https://formcarry.com/s/G3qDf56ss3N" method="POST">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" value="pedrolucaslb@hotmail.com" required style="display:none;">
 
     <label for="mensagem">Mensagem:</label>
     <textarea id="mensagem" name="mensagem" required></textarea>
 
     <button type="submit" class="btn">Enviar</button>
   </form>
+
+  <!-- Mensagem de resposta -->
+  <p id="resposta"></p>
+
+  <!-- Script principal -->
+  <script src="js/principal.js" defer></script>
+
+  <footer>
+    <p>&copy; 2023 Natrilha Turismo - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
