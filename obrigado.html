@@ -2,52 +2,70 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Obrigado - Na Trilha</title>
+  <title>Obrigado - Natrilha Turismo</title>
+  <link rel="stylesheet" href="css/style.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: url('fundo-natrilha.jpg') no-repeat center center fixed;
-      background-size: cover;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('img/contato-banner.png') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
+    }
+    header, footer {
+      background-color: #2e7d32; /* verde escuro */
+      padding: 15px;
       text-align: center;
+      color: #fff;
     }
     .overlay {
       background-color: rgba(0,0,0,0.6);
-      height: 100vh;
+      min-height: 80vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding: 20px;
     }
     h1 {
       font-size: 3em;
+      color: #ff9800; /* laranja vibrante */
       margin-bottom: 20px;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       max-width: 600px;
+      margin-bottom: 30px;
     }
     a {
-      margin-top: 30px;
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
+      padding: 12px 24px;
+      background-color: #4caf50; /* verde médio */
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
     a:hover {
-      background-color: #45a049;
+      background-color: #ff5722; /* laranja mais intenso */
     }
   </style>
 </head>
 <body>
+  <header>
+    <h2>Natrilha Turismo</h2>
+  </header>
+
   <div class="overlay">
     <h1>Obrigado pela sua mensagem!</h1>
     <p>Recebemos seu contato e em breve retornaremos. Continue explorando e vivendo novas trilhas conosco.</p>
     <a href="index.html">Voltar para a página inicial</a>
   </div>
+
+  <footer>
+    <p>&copy; 2026 Natrilha Turismo - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
