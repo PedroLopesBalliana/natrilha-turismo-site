@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Natrilha Turismo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+    header, footer {
+      background-color: #2e7d32; /* verde escuro */
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #ff9800; /* laranja vibrante */
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 80%;
+      border: 5px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Natrilha Turismo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="redes.html">Redes</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Galeria</h1>
+  <div id="galeria"></div>
+
+  <script>
+    // número total de imagens disponíveis
+    const totalImagens = 10;
+    // sorteia um número entre 1 e totalImagens
+    const numero = Math.floor(Math.random() * totalImagens) + 1;
+    // monta o caminho relativo
+    const caminho = `repoGalera/img${numero}.jpg`;
+
+    // cria elemento <img> e adiciona na página
+    const img = document.createElement("img");
+    img.src = caminho;
+    img.alt = `Imagem ${numero} da galeria`;
+    document.getElementById("galeria").appendChild(img);
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Natrilha Turismo - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
